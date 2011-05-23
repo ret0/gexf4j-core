@@ -8,8 +8,8 @@ import com.ojn.gexf4j.core.data.AttributeType;
 public class AttributeImplTest extends AttributeTest {
 
 	@Override
-	protected Attribute newAttribute(AttributeType type, String id, AttributeClass attribClass) {
-		return new AttributeImpl(type, id, attribClass);
+	protected Attribute newAttribute(final AttributeType type, final String id, final AttributeClass attribClass) {
+		return new AttributeImpl(id, type, attribClass.toString());
 	}
 
 }
